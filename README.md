@@ -4,8 +4,6 @@
 
 - Added windows install instructions
 
-- The original ``Using The Script`` instructions were very unclear to me.
-
 ---
 
 ![](images/banner.png)
