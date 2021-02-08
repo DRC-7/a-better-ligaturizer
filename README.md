@@ -2,7 +2,9 @@
 
 ### UPDATED: 
 
-- Added windows install instructions
+- Added Windows install instructions
+
+- Edited input file name "FiraCode-Regular.otf"
 
 ---
 
