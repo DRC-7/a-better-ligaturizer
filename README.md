@@ -1,5 +1,13 @@
 # Ligaturizer #
 
+### UPDATED: 
+
+- Added windows install instructions
+
+- The original ``Using The Script`` instructions were very unclear to me.
+
+---
+
 ![](images/banner.png)
 
 **Add ligatures to any coding font!**
@@ -36,14 +44,26 @@ This awesome script was written by [IlyaSkriblovsky](https://github.com/IlyaSkri
 **Script**: This script requires FontForge python bindings. For Debian/Ubuntu they are available in `python-fontforge` package. For macOS,
 they are available via brew (`brew install fontforge`).
 
+**[Link to FontForge for downloading](https://fontforge.org/en-US/)**
+
 ## Using the Script ##
-1.  Move/copy the font you want to ligaturize into `input-fonts/`
-2.  Run the script: `$ fontforge -lang=py ligaturize.py`
-3.  You'll be prompted for the name of the font, and the name for the generated font.
-Example:
+
+**Edited to included specific instructions for Windows CMD (`#2-5`)**
+
+1. Move/copy the font you want to ligaturize into `input-fonts/`
+
+2. Navigate to `C:\Program Files(x86)\FontForgeBuilds\...`
+3. Run `fontforge-console.bat`, terminal message will identify that FontForge is running.
+4. Navigate to the location of the `a-better-ligatureizer-master` folder.
+5. Run script using command: `> fontforge -lang=py -script ligaturizer.py`
+6. ~~Run the script: `$ fontforge -lang=py ligaturize.py`~~ 
+
+7. You'll be prompted for the name of the font, and the name for the generated font.
+---
+## Example:
 
 ```shell
-❯ fontforge -lang=py ligaturize.py
+C:\...\...\a-better-ligatureizer-master> fontforge -lang=py -script ligaturizer.py
     ...
 Enter the source font filename (including extension): RobotoMono-Regular.ttf
 Enter a name for your ligaturized font -- or press ENTER to use the same name: <PRESS ENTER>
@@ -52,7 +72,7 @@ Generated ligaturized font Roboto Mono L in ligaturized-fonts/RobotoMono.ttf
 ```
 
 ```shell
-❯ fontforge -lang=py ligaturize.py
+C:\...\...\a-better-ligatureizer-master> fontforge -lang=py -script ligaturizer.py
     ...
 Enter the source font filename (including extension): RobotoMono-Regular.ttf
 Enter a name for your ligaturized font -- or press ENTER to use the same name: RobotoMonoL
